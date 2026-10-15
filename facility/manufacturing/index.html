@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Machinery Fleet | Marvel Techno Industries | Discipline Delivers Quality</title>
+  <meta name="description" content="Explore Marvel Techno Industries 12-unit machinery fleet — Hot friction screw presses, CNC turning centers, CNC vertical milling down to 0.01mm tolerance, thread rolling, and laser marking.">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="page-inner">
+  <div class="page-progress-bar" id="pageProgressBar"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Header -->
+  <header class="site-header header-light" id="siteHeader">
+    <div class="container header-container">
+      <a href="/" class="brand-link" aria-label="Marvel Techno Industries Home">
+        <img src="/assets/logo.png" alt="Marvel Techno Industries Emblem" class="brand-emblem">
+        <div class="brand-text-block">
+          <span class="brand-name">Marvel Techno Industries</span>
+          <span class="brand-tagline">Discipline Delivers Quality</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="/" class="nav-link">Home</a>
+        <div class="nav-item-dropdown">
+          <a href="/about/" class="nav-link">
+            About Us
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/about/company/" class="dropdown-item">About</a>
+            <a href="/about/management/" class="dropdown-item">Management</a>
+            <a href="/about/why-us/" class="dropdown-item">Why Us</a>
+          </div>
+        </div>
+        <a href="/products/" class="nav-link">Products</a>
+        <div class="nav-item-dropdown">
+          <a href="/industries/" class="nav-link">
+            Industries
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu dropdown-wide">
+            <a href="/industries/automobile/" class="dropdown-item">Automobile Sector</a>
+            <a href="/industries/hydraulic/" class="dropdown-item">Hydraulic Sector</a>
+            <a href="/industries/agricultural-equipment/" class="dropdown-item">Agricultural Equipment</a>
+            <a href="/industries/pumps-and-valves/" class="dropdown-item">Pump &amp; Valve Sector</a>
+            <a href="/industries/earthmoving/" class="dropdown-item">Earthmoving</a>
+            <a href="/industries/oil-and-gas/" class="dropdown-item">Oil &amp; Gas Sector</a>
+            <a href="/industries/power/" class="dropdown-item">Power Industry</a>
+            <a href="/industries/mining/" class="dropdown-item">Mining Sector</a>
+          </div>
+        </div>
+        <div class="nav-item-dropdown">
+          <a href="/capabilities/" class="nav-link">
+            Capabilities
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/capabilities/material-grade/" class="dropdown-item">Material Grade</a>
+            <a href="/capabilities/core-strength/" class="dropdown-item">Core Strength</a>
+          </div>
+        </div>
+        <div class="nav-item-dropdown">
+          <a href="/facility/" class="nav-link active">
+            Facility
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/facility/infrastructure/" class="dropdown-item">Infrastructure</a>
+            <a href="/facility/manufacturing/" class="dropdown-item">Manufacturing Facility</a>
+          </div>
+        </div>
+        <a href="/quality/" class="nav-link">Quality</a>
+      </nav>
+
+      <div class="header-cta-wrap">
+        <a href="/contact/" class="btn btn-primary btn-header-cta">
+          Contact Us
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link">Home</a>
+      <div class="mobile-nav-group">
+        <button type="button" class="mobile-nav-group-header">
+          About Us
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/about/company/" class="mobile-sub-link">About</a>
+          <a href="/about/management/" class="mobile-sub-link">Management</a>
+          <a href="/about/why-us/" class="mobile-sub-link">Why Us</a>
+        </div>
+      </div>
+      <a href="/products/" class="mobile-nav-link">Products</a>
+      <div class="mobile-nav-group">
+        <button type="button" class="mobile-nav-group-header">
+          Industries
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/industries/automobile/" class="mobile-sub-link">Automobile Sector</a>
+          <a href="/industries/hydraulic/" class="mobile-sub-link">Hydraulic Sector</a>
+          <a href="/industries/agricultural-equipment/" class="mobile-sub-link">Agricultural Equipment</a>
+          <a href="/industries/pumps-and-valves/" class="mobile-sub-link">Pump &amp; Valve Sector</a>
+          <a href="/industries/earthmoving/" class="mobile-sub-link">Earthmoving</a>
+          <a href="/industries/oil-and-gas/" class="mobile-sub-link">Oil &amp; Gas Sector</a>
+          <a href="/industries/power/" class="mobile-sub-link">Power Industry</a>
+          <a href="/industries/mining/" class="mobile-sub-link">Mining Sector</a>
+        </div>
+      </div>
+      <div class="mobile-nav-group">
+        <button type="button" class="mobile-nav-group-header">
+          Capabilities
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/capabilities/material-grade/" class="mobile-sub-link">Material Grade</a>
+          <a href="/capabilities/core-strength/" class="mobile-sub-link">Core Strength</a>
+        </div>
+      </div>
+      <div class="mobile-nav-group open">
+        <button type="button" class="mobile-nav-group-header">
+          Facility
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/facility/infrastructure/" class="mobile-sub-link">Infrastructure</a>
+          <a href="/facility/manufacturing/" class="mobile-sub-link">Manufacturing Facility</a>
+        </div>
+      </div>
+      <a href="/quality/" class="mobile-nav-link">Quality</a>
+      <a href="/contact/" class="mobile-nav-link" style="color: var(--primary-orange); font-weight: 700;">Contact Us</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="/contact/" class="btn btn-primary" style="width: 100%; margin-bottom: 24px;">Contact Us</a>
+      <div class="mobile-nav-contact-item">Phone: <a href="tel:+919377465254">+91 93774 65254</a></div>
+      <div class="mobile-nav-contact-item">Email: <a href="mailto:info@marveltechno.in">info@marveltechno.in</a></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Full-Width Page Hero Banner -->
+    <section class="page-hero-banner" style="background-image: url('/assets/hero_manufacturing_facility.jpg');">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1 class="page-hero-title">Manufacturing Facility</h1>
+      </div>
+    </section>
+
+    <!-- Inner Hero -->
+    <section class="inner-page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <span class="breadcrumb-item"><a href="/">Home</a></span>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-item"><a href="/facility/">Facility</a></span>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-item active">Manufacturing Facility</span>
+        </nav>
+        <div class="section-badge">Production Assets</div>
+        <h1 class="section-title">Manufacturing Facility</h1>
+        <p class="section-subtitle">
+          12 specialized manufacturing and finishing units delivering precision hot forging and CNC machining with repeatable 0.01mm tolerances.
+        </p>
+      </div>
+    </section>
+
+    <!-- Machinery Fleet Section -->
+    <section style="padding: 90px 0; background-color: var(--bg-white);">
+      <div class="container">
+        <!-- Interactive Category Filter Bar -->
+        <div class="machinery-filter-bar reveal-fade-up">
+          <button type="button" class="filter-btn active" data-filter="all">All Units (12)</button>
+          <button type="button" class="filter-btn" data-filter="forging">Forging &amp; Forming</button>
+          <button type="button" class="filter-btn" data-filter="cnc">CNC &amp; Milling</button>
+          <button type="button" class="filter-btn" data-filter="threading">Threading &amp; Cutting</button>
+          <button type="button" class="filter-btn" data-filter="marking">Marking &amp; Identification</button>
+        </div>
+
+        <!-- Machinery Grid (All cards pure white background) -->
+        <div class="machinery-grid">
+          <!-- 1. Hot Friction Screw Press -->
+          <div class="machine-card" data-category="forging">
+            <span class="machine-badge">Unit 01 &bull; Forging</span>
+            <div class="machine-media-box">
+              <img src="/assets/friction-press.png" alt="Hot Friction Screw Press">
+            </div>
+            <h3 class="machine-title">Hot Friction Screw Press</h3>
+            <p class="machine-role">Primary hot forging press lines producing dense forged grain structure and high fatigue resistance.</p>
+            <div class="machine-spec-badge">Capacity: 100 to 300 Ton</div>
+          </div>
+
+          <!-- 2. CNC Turning Center -->
+          <div class="machine-card" data-category="cnc">
+            <span class="machine-badge">Unit 02 &bull; CNC Machining</span>
+            <div class="machine-media-box">
+              <img src="/assets/cnc-turning.png" alt="CNC Turning Center">
+            </div>
+            <h3 class="machine-title">CNC Turning Center</h3>
+            <p class="machine-role">Slant-bed precision CNC turning centers engineered for close-tolerance cylindrical turning and threading.</p>
+            <div class="machine-spec-badge">Tolerance: 0.01mm</div>
+          </div>
+
+          <!-- 3. CNC Vertical Milling Machine -->
+          <div class="machine-card" data-category="cnc">
+            <span class="machine-badge">Unit 03 &bull; CNC Machining</span>
+            <div class="machine-media-box">
+              <img src="/assets/cnc_vertical_milling_machine.png" alt="CNC VERTICAL MILLING MACHINE" style="max-height: 100%; width: auto; object-fit: contain;">
+            </div>
+            <h3 class="machine-title">CNC VERTICAL MILLING MACHINE</h3>
+            <p class="machine-role">Computer numerical controlled milling for complex multi-axis milling operations down to 0.01mm tolerance.</p>
+            <div class="machine-spec-badge">Tolerance: ±0.01mm | Multi-Axis</div>
+          </div>
+
+          <!-- 4. CNC Special Purpose Machine -->
+          <div class="machine-card" data-category="cnc">
+            <span class="machine-badge">Unit 04 &bull; SPM</span>
+            <div class="machine-media-box">
+              <img src="/assets/cnc-spm.png" alt="CNC Special Purpose Machine (SPM)">
+            </div>
+            <h3 class="machine-title">CNC Special Purpose Machine (SPM)</h3>
+            <p class="machine-role">Custom dedicated multi-station machining for high-volume automated drilling, tapping, and porting.</p>
+            <div class="machine-spec-badge">Capability: Multi-Spindle SPM</div>
+          </div>
+
+          <!-- 5. Hydraulic Straightening Press -->
+          <div class="machine-card" data-category="forging">
+            <span class="machine-badge">Unit 05 &bull; Forming</span>
+            <div class="machine-media-box">
+              <img src="/assets/hydraulic-press.png" alt="Hydraulic Straightening Press">
+            </div>
+            <h3 class="machine-title">Hydraulic Straightening Press</h3>
+            <p class="machine-role">Heavy-duty hydraulic press for post-forging component straightening, coining, and dimensional calibration.</p>
+            <div class="machine-spec-badge">Operation: Straightening &amp; Coining</div>
+          </div>
+
+          <!-- 6. Band Saw Cutting Machine -->
+          <div class="machine-card" data-category="threading">
+            <span class="machine-badge">Unit 06 &bull; Cutting</span>
+            <div class="machine-media-box">
+              <img src="/assets/benshaw-cutting.png" alt="Band Saw Cutting Machine">
+            </div>
+            <h3 class="machine-title">Band Saw Cutting Machine</h3>
+            <p class="machine-role">High-speed automatic band sawing machine for clean, perpendicular raw material billet preparation.</p>
+            <div class="machine-spec-badge">Accuracy: Burr-Free Cut-Off</div>
+          </div>
+
+          <!-- 7. Conventional Lathe Machine -->
+          <div class="machine-card" data-category="cnc">
+            <span class="machine-badge">Unit 07 &bull; Secondary</span>
+            <div class="machine-media-box">
+              <img src="/assets/conventional-lathe.png" alt="Conventional Lathe Machine">
+            </div>
+            <h3 class="machine-title">Conventional Lathe Machine</h3>
+            <p class="machine-role">Heavy-duty conventional lathes dedicated to tooling fabrication, die repair, and secondary facing operations.</p>
+            <div class="machine-spec-badge">Role: In-House Tooling &amp; Prep</div>
+          </div>
+
+          <!-- 8. Pillar Drill Machine -->
+          <div class="machine-card" data-category="cnc">
+            <span class="machine-badge">Unit 08 &bull; Secondary</span>
+            <div class="machine-media-box">
+              <img src="/assets/drill-machine.png" alt="Heavy Pillar Drill Machine">
+            </div>
+            <h3 class="machine-title">Heavy Pillar Drill Machine</h3>
+            <p class="machine-role">High-torque geared drilling machine for counterboring, reaming, and secondary multi-diameter holes.</p>
+            <div class="machine-spec-badge">Type: Geared Multi-Speed</div>
+          </div>
+
+          <!-- 9. Hydraulic Thread Rolling Machine -->
+          <div class="machine-card" data-category="threading">
+            <span class="machine-badge">Unit 09 &bull; Threading</span>
+            <div class="machine-media-box">
+              <img src="/assets/thread-rolling.png" alt="Hydraulic Thread Rolling Machine">
+            </div>
+            <h3 class="machine-title">Hydraulic Thread Rolling Machine</h3>
+            <p class="machine-role">Cold deformation thread rolling machine producing unbroken grain flow threads with superior shear resistance.</p>
+            <div class="machine-spec-badge">Standards: Metric / UN / NPT / BSP</div>
+          </div>
+
+          <!-- 10. Thread Cutting Machine -->
+          <div class="machine-card" data-category="threading">
+            <span class="machine-badge">Unit 10 &bull; Threading</span>
+            <div class="machine-media-box">
+              <img src="/assets/thread-cutting.png" alt="Thread Cutting Machine">
+            </div>
+            <h3 class="machine-title">Automatic Thread Cutting Machine</h3>
+            <p class="machine-role">High-precision threading machine for internal and external pipe threads, conduit fittings, and port plugs.</p>
+            <div class="machine-spec-badge">Capacity: Pipe &amp; Port Threads</div>
+          </div>
+
+          <!-- 11. Dot Matrix Marking Machine -->
+          <div class="machine-card" data-category="marking">
+            <span class="machine-badge">Unit 11 &bull; Identification</span>
+            <div class="machine-media-box">
+              <img src="/assets/dot-matrix.png" alt="Dot Matrix Marking Machine">
+            </div>
+            <h3 class="machine-title">Dot Matrix Marking Machine</h3>
+            <p class="machine-role">Pneumatic pin marking system for deep, indelible component serialization, heat numbers, and 2D DataMatrix codes.</p>
+            <div class="machine-spec-badge">Traceability: 100% Heat-Number Code</div>
+          </div>
+
+          <!-- 12. Fiber Laser Marking Machine -->
+          <div class="machine-card" data-category="marking">
+            <span class="machine-badge">Unit 12 &bull; Identification</span>
+            <div class="machine-media-box">
+              <img src="/assets/laser-marking.png" alt="Fiber Laser Marking Machine">
+            </div>
+            <h3 class="machine-title">Fiber Laser Marking Machine</h3>
+            <p class="machine-role">High-speed optical fiber laser marking for crisp, burr-free logos, barcodes, part numbers, and batch details.</p>
+            <div class="machine-spec-badge">Resolution: 0.001mm Optical Focus</div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 60px;">
+          <a href="/contact/" class="btn btn-primary">
+            Request Production Capacity Booking
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand-col">
+          <a href="/" class="brand-link" style="margin-bottom: 16px;">
+            <img src="/assets/logo.png" alt="Marvel Techno Industries" class="brand-emblem" style="filter: none;">
+            <div class="brand-text-block">
+              <span class="brand-name" style="color: var(--text-white);">Marvel Techno Industries</span>
+              <span class="brand-tagline">Discipline Delivers Quality</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Single-source precision hot forging and high-accuracy CNC machining. Delivering critical mechanical components for automotive, hydraulic, agricultural, pump &amp; valve, and energy sectors worldwide.
+          </p>
+          <div class="footer-iso-badge">
+            <svg class="footer-iso-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <div>
+              <div class="footer-iso-title">TUV SUD ISO 9001:2015</div>
+              <div class="footer-iso-sub">Reg. No. 99 100 25318/01 | Valid to 2029</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="/about/company/" class="footer-link">About Company</a></li>
+            <li><a href="/about/management/" class="footer-link">Management Flowchart</a></li>
+            <li><a href="/about/why-us/" class="footer-link">Why Us</a></li>
+            <li><a href="/products/" class="footer-link">Products Catalog</a></li>
+            <li><a href="/quality/" class="footer-link">Quality &amp; Standards</a></li>
+            <li><a href="/contact/" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Sectors &amp; Capabilities</h4>
+          <ul class="footer-links">
+            <li><a href="/industries/automobile/" class="footer-link">Automobile Sector</a></li>
+            <li><a href="/industries/hydraulic/" class="footer-link">Hydraulic Sector</a></li>
+            <li><a href="/industries/agricultural-equipment/" class="footer-link">Agricultural Equipment</a></li>
+            <li><a href="/industries/pumps-and-valves/" class="footer-link">Pump &amp; Valve Sector</a></li>
+            <li><a href="/industries/oil-and-gas/" class="footer-link">Oil &amp; Gas Sector</a></li>
+            <li><a href="/capabilities/material-grade/" class="footer-link">Material Grades Matrix</a></li>
+            <li><a href="/capabilities/core-strength/" class="footer-link">Core Strengths</a></li>
+            <li><a href="/facility/manufacturing/" class="footer-link">Machinery Fleet (12 Units)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Information</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+919377465254">+91 93774 65254</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:info@marveltechno.in">info@marveltechno.in</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Plot no. 9, Revenue Survey No.121, At Padavala, Tal. Kotda Sangani, Dist. Rajkot, Gujarat, India.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-bottom-rights">
+          <span>&copy; 2026 Marvel Techno Industries. All rights reserved.</span>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-white-dim);">
+          Discipline Delivers Quality
+        </div>
+        <button type="button" class="btn-back-to-top" id="backToTopBtn" aria-label="Back to top">
+          <span>Top</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

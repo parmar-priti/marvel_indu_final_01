@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Us | Marvel Techno Industries | Discipline Delivers Quality</title>
+  <meta name="description" content="Discover why global OEMs choose Marvel Techno Industries for single-source precision hot forging and high-accuracy CNC machining.">
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="page-inner">
+  <div class="page-progress-bar" id="pageProgressBar"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Header -->
+  <header class="site-header header-light" id="siteHeader">
+    <div class="container header-container">
+      <a href="/" class="brand-link" aria-label="Marvel Techno Industries Home">
+        <img src="/assets/logo.png" alt="Marvel Techno Industries Emblem" class="brand-emblem">
+        <div class="brand-text-block">
+          <span class="brand-name">Marvel Techno Industries</span>
+          <span class="brand-tagline">Discipline Delivers Quality</span>
+        </div>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="/" class="nav-link">Home</a>
+        <div class="nav-item-dropdown">
+          <a href="/about/" class="nav-link active">
+            About Us
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/about/company/" class="dropdown-item">About</a>
+            <a href="/about/management/" class="dropdown-item">Management</a>
+            <a href="/about/why-us/" class="dropdown-item active">Why Us</a>
+          </div>
+        </div>
+        <a href="/products/" class="nav-link">Products</a>
+        <div class="nav-item-dropdown">
+          <a href="/industries/" class="nav-link">
+            Industries
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu dropdown-wide">
+            <a href="/industries/automobile/" class="dropdown-item">Automobile Sector</a>
+            <a href="/industries/hydraulic/" class="dropdown-item">Hydraulic Sector</a>
+            <a href="/industries/agricultural-equipment/" class="dropdown-item">Agricultural Equipment</a>
+            <a href="/industries/pumps-and-valves/" class="dropdown-item">Pump &amp; Valve Sector</a>
+            <a href="/industries/earthmoving/" class="dropdown-item">Earthmoving</a>
+            <a href="/industries/oil-and-gas/" class="dropdown-item">Oil &amp; Gas Sector</a>
+            <a href="/industries/power/" class="dropdown-item">Power Industry</a>
+            <a href="/industries/mining/" class="dropdown-item">Mining Sector</a>
+          </div>
+        </div>
+        <div class="nav-item-dropdown">
+          <a href="/capabilities/" class="nav-link">
+            Capabilities
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/capabilities/material-grade/" class="dropdown-item">Material Grade</a>
+            <a href="/capabilities/core-strength/" class="dropdown-item">Core Strength</a>
+          </div>
+        </div>
+        <div class="nav-item-dropdown">
+          <a href="/facility/" class="nav-link">
+            Facility
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/facility/infrastructure/" class="dropdown-item">Infrastructure</a>
+            <a href="/facility/manufacturing/" class="dropdown-item">Manufacturing Facility</a>
+          </div>
+        </div>
+        <a href="/quality/" class="nav-link">Quality</a>
+      </nav>
+
+      <div class="header-cta-wrap">
+        <a href="/contact/" class="btn btn-primary btn-header-cta">
+          Contact Us
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link">Home</a>
+      <div class="mobile-nav-group open">
+        <button type="button" class="mobile-nav-group-header">
+          About Us
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/about/company/" class="mobile-sub-link">About</a>
+          <a href="/about/management/" class="mobile-sub-link">Management</a>
+          <a href="/about/why-us/" class="mobile-sub-link active">Why Us</a>
+        </div>
+      </div>
+      <a href="/products/" class="mobile-nav-link">Products</a>
+      <div class="mobile-nav-group">
+        <button type="button" class="mobile-nav-group-header">
+          Industries
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/industries/automobile/" class="mobile-sub-link">Automobile Sector</a>
+          <a href="/industries/hydraulic/" class="mobile-sub-link">Hydraulic Sector</a>
+          <a href="/industries/agricultural-equipment/" class="mobile-sub-link">Agricultural Equipment</a>
+          <a href="/industries/pumps-and-valves/" class="mobile-sub-link">Pump &amp; Valve Sector</a>
+          <a href="/industries/earthmoving/" class="mobile-sub-link">Earthmoving</a>
+          <a href="/industries/oil-and-gas/" class="mobile-sub-link">Oil &amp; Gas Sector</a>
+          <a href="/industries/power/" class="mobile-sub-link">Power Industry</a>
+          <a href="/industries/mining/" class="mobile-sub-link">Mining Sector</a>
+        </div>
+      </div>
+      <div class="mobile-nav-group">
+        <button type="button" class="mobile-nav-group-header">
+          Capabilities
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/capabilities/material-grade/" class="mobile-sub-link">Material Grade</a>
+          <a href="/capabilities/core-strength/" class="mobile-sub-link">Core Strength</a>
+        </div>
+      </div>
+      <div class="mobile-nav-group">
+        <button type="button" class="mobile-nav-group-header">
+          Facility
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/facility/infrastructure/" class="mobile-sub-link">Infrastructure</a>
+          <a href="/facility/manufacturing/" class="mobile-sub-link">Manufacturing Facility</a>
+        </div>
+      </div>
+      <a href="/quality/" class="mobile-nav-link">Quality</a>
+      <a href="/contact/" class="mobile-nav-link" style="color: var(--primary-orange); font-weight: 700;">Contact Us</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="/contact/" class="btn btn-primary" style="width: 100%; margin-bottom: 24px;">Contact Us</a>
+      <div class="mobile-nav-contact-item">Phone: <a href="tel:+919377465254">+91 93774 65254</a></div>
+      <div class="mobile-nav-contact-item">Email: <a href="mailto:info@marveltechno.in">info@marveltechno.in</a></div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Full-Width Page Hero Banner -->
+    <section class="page-hero-banner" style="background-image: url('/assets/hero_why_us.jpg');">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <h1 class="page-hero-title">Why Us</h1>
+      </div>
+    </section>
+
+    <!-- Inner Hero -->
+    <section class="inner-page-hero">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <span class="breadcrumb-item"><a href="/">Home</a></span>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-item"><a href="/about/">About Us</a></span>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-item active">Why Us</span>
+        </nav>
+        <div class="section-badge">Competitive Advantage</div>
+        <h1 class="section-title">Built on a Foundation of Industrial Mastery</h1>
+        <p class="section-subtitle">
+          Why tier-1 global manufacturers rely on Marvel Techno Industries as their primary single-source engineering partner.
+        </p>
+      </div>
+    </section>
+
+    <!-- Heritage & Plant Overview -->
+    <section style="padding: 90px 0; background-color: var(--bg-white);">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-media-col reveal-fade-up">
+            <div class="about-image-wrapper">
+              <img src="/assets/plant-facility.jpg" alt="Marvel Techno Industries Plant Facility">
+              <div class="about-floating-badge">
+                <div class="about-badge-num">23,000<span> Sq.Ft</span></div>
+                <div class="about-badge-label">Modern Manufacturing Plant</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content-col reveal-fade-up reveal-delay-1">
+            <div class="section-badge">Proven Track Record</div>
+            <h2 class="section-title">Two Decades of Metallurgical Mastery</h2>
+            <p class="about-lead-text">
+              Our directors bring more than two decades of foundational expertise originating with <strong>Maruti Techno Industries</strong> (established in 2004).
+            </p>
+            <p class="about-body-text">
+              By uniting time-honoured hot forging techniques with ultra-modern CNC turning and vertical milling machinery, Marvel Techno Industries eliminates the delays, scrap rates, and margin markups associated with multi-tiered supplier chains.
+            </p>
+            <div style="margin-top: 28px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px;">
+              <div style="border-left: 2px solid var(--primary-orange); padding-left: 14px;">
+                <div style="font-family: var(--font-mono); font-size: 20px; font-weight: 700; color: var(--text-heading);">100% In-House</div>
+                <div style="font-size: 13px; color: var(--text-muted);">Cutting, Forging &amp; CNC Machining</div>
+              </div>
+              <div style="border-left: 2px solid var(--primary-orange); padding-left: 14px;">
+                <div style="font-family: var(--font-mono); font-size: 20px; font-weight: 700; color: var(--text-heading);">0.01mm Tolerance</div>
+                <div style="font-size: 13px; color: var(--text-muted);">Repeatable CNC Accuracy</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Pillars of Excellence -->
+    <section style="padding: 90px 0; background-color: var(--bg-offwhite); border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+      <div class="container">
+        <div style="text-align: center; max-width: 650px; margin: 0 auto 50px;" class="reveal-fade-up">
+          <div class="section-badge" style="justify-content: center;">Value Proposition</div>
+          <h2 class="section-title">The Marvel Advantage</h2>
+          <p class="section-subtitle" style="margin: 0 auto;">Four cornerstones that distinguish our engineering operations from conventional machining workshops.</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;" class="reveal-fade-up">
+          <!-- Pillar 1 -->
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <h3 class="why-title">Single-Source Control</h3>
+            <p class="why-description">
+              From certified raw billet sawing and hot friction press forging to CNC turning, milling, and thread rolling under one roof. Zero subcontracting delays.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="22" y1="12" x2="18" y2="12"></line>
+                <line x1="6" y1="12" x2="2" y2="12"></line>
+                <line x1="12" y1="6" x2="12" y2="2"></line>
+                <line x1="12" y1="22" x2="12" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="why-title">Micron Precision</h3>
+            <p class="why-description">
+              10-micron CNC turning accuracy and 5-micron grinding precision, backed by calibrated bore gauges, micrometers, and Level 3 PPAP documentation.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 20V10"></path>
+                <path d="M12 20V4"></path>
+                <path d="M6 20v-6"></path>
+              </svg>
+            </div>
+            <h3 class="why-title">Scalable Capacity</h3>
+            <p class="why-description">
+              3,000 MT annual throughput with 30% reserved capacity, giving global clients the confidence to ramp up production volumes without lead-time penalties.
+            </p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="3" width="15" height="13"></rect>
+                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                <circle cx="18.5" cy="18.5" r="2.5"></circle>
+              </svg>
+            </div>
+            <h3 class="why-title">Export-Grade Packing</h3>
+            <p class="why-description">
+              Anti-rust corrosion protection, VCI vacuum barrier packaging, and seaworthy fumigated wooden boxes tailored for container shipping to USA and Europe.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+          <a href="/contact/" class="btn btn-primary">
+            Request A Feasibility Review
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <div class="footer-col footer-brand-col">
+          <a href="/" class="brand-link" style="margin-bottom: 16px;">
+            <img src="/assets/logo.png" alt="Marvel Techno Industries" class="brand-emblem" style="filter: none;">
+            <div class="brand-text-block">
+              <span class="brand-name" style="color: var(--text-white);">Marvel Techno Industries</span>
+              <span class="brand-tagline">Discipline Delivers Quality</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Single-source precision hot forging and high-accuracy CNC machining. Delivering critical mechanical components for automotive, hydraulic, agricultural, pump &amp; valve, and energy sectors worldwide.
+          </p>
+          <div class="footer-iso-badge">
+            <svg class="footer-iso-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            <div>
+              <div class="footer-iso-title">TÜV SÜD ISO 9001:2015</div>
+              <div class="footer-iso-sub">Reg. No. 99 100 25318/01 | Valid to 2029</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="/about/company/" class="footer-link">About Company</a></li>
+            <li><a href="/about/management/" class="footer-link">Management Flowchart</a></li>
+            <li><a href="/about/why-us/" class="footer-link">Why Us</a></li>
+            <li><a href="/products/" class="footer-link">Products Catalog</a></li>
+            <li><a href="/quality/" class="footer-link">Quality &amp; Standards</a></li>
+            <li><a href="/contact/" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Sectors &amp; Capabilities</h4>
+          <ul class="footer-links">
+            <li><a href="/industries/automobile/" class="footer-link">Automobile Sector</a></li>
+            <li><a href="/industries/hydraulic/" class="footer-link">Hydraulic Sector</a></li>
+            <li><a href="/industries/agricultural-equipment/" class="footer-link">Agricultural Equipment</a></li>
+            <li><a href="/industries/pumps-and-valves/" class="footer-link">Pump &amp; Valve Sector</a></li>
+            <li><a href="/industries/oil-and-gas/" class="footer-link">Oil &amp; Gas Sector</a></li>
+            <li><a href="/capabilities/material-grade/" class="footer-link">Material Grades Matrix</a></li>
+            <li><a href="/capabilities/core-strength/" class="footer-link">Core Strengths</a></li>
+            <li><a href="/facility/manufacturing/" class="footer-link">Machinery Fleet (12 Units)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Information</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <a href="tel:+919377465254">+91 93774 65254</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <a href="mailto:info@marveltechno.in">info@marveltechno.in</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Plot no. 9, Revenue Survey No.121, At Padavala, Tal. Kotda Sangani, Dist. Rajkot, Gujarat, India.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-bottom-rights">
+          <span>&copy; 2026 Marvel Techno Industries. All rights reserved.</span>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-white-dim);">
+          Discipline Delivers Quality
+        </div>
+        <button type="button" class="btn-back-to-top" id="backToTopBtn" aria-label="Back to top">
+          <span>Top</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>

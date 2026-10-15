@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel Techno Industries | Discipline Delivers Quality | Precision Forging & Machining</title>
+  
+  <!-- Meta tags for SEO & Corporate Identity -->
+  <meta name="description" content="Marvel Techno Industries — Precision hot forging and CNC machining solutions. Delivering custom forged components, hydraulic fittings, valve components, and automotive parts with tolerances up to 0.01mm.">
+  <meta name="keywords" content="Marvel Techno Industries, Precision Machining, Hot Forging, CNC Turning, Hydraulic Fittings, Valve Components, Automotive Components, Friction Press">
+  <meta name="author" content="Marvel Techno Industries">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Marvel Techno Industries — Discipline Delivers Quality">
+  <meta property="og:description" content="Precision engineered forging and machining solutions backed by two decades of industrial leadership.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.marveltechno.in">
+  <meta property="og:image" content="/assets/logo.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/assets/logo.png">
+
+  <!-- Google Fonts: Sora (Headings) + DM Sans (Body) + JetBrains Mono (Tech) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..800;1,9..40,300..800&family=JetBrains+Mono:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <!-- Page Progress Bar (Instant Navigation Feedback) -->
+  <div class="page-progress-bar" id="pageProgressBar"></div>
+
+  <!-- Custom Cursor Elements (Desktop) -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ==========================================
+       1. HEADER / NAVBAR WITH FUNCTIONAL DROPDOWNS
+       ========================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="/" class="brand-link" aria-label="Marvel Techno Industries Home">
+        <img src="/assets/logo.png" alt="Marvel Techno Industries Emblem" class="brand-emblem">
+        <div class="brand-text-block">
+          <span class="brand-name">Marvel Techno Industries</span>
+          <span class="brand-tagline">Discipline Delivers Quality</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation with Working Dropdowns -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <a href="/" class="nav-link active">Home</a>
+
+        <!-- About Us Dropdown -->
+        <div class="nav-item-dropdown">
+          <a href="/about/" class="nav-link">
+            About Us
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/about/company/" class="dropdown-item">About</a>
+            <a href="/about/management/" class="dropdown-item">Management</a>
+            <a href="/about/why-us/" class="dropdown-item">Why Us</a>
+          </div>
+        </div>
+
+        <a href="/products/" class="nav-link">Products</a>
+
+        <!-- Industries Dropdown (8 Subpages) -->
+        <div class="nav-item-dropdown">
+          <a href="/industries/" class="nav-link">
+            Industries
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown-menu dropdown-wide">
+            <a href="/industries/automobile/" class="dropdown-item">Automobile Sector</a>
+            <a href="/industries/hydraulic/" class="dropdown-item">Hydraulic Sector</a>
+            <a href="/industries/agricultural-equipment/" class="dropdown-item">Agricultural Equipment</a>
+            <a href="/industries/pumps-and-valves/" class="dropdown-item">Pump &amp; Valve Sector</a>
+            <a href="/industries/earthmoving/" class="dropdown-item">Earthmoving</a>
+            <a href="/industries/oil-and-gas/" class="dropdown-item">Oil &amp; Gas Sector</a>
+            <a href="/industries/power/" class="dropdown-item">Power Industry</a>
+            <a href="/industries/mining/" class="dropdown-item">Mining Sector</a>
+          </div>
+        </div>
+
+        <!-- Capabilities Dropdown -->
+        <div class="nav-item-dropdown">
+          <a href="/capabilities/" class="nav-link">
+            Capabilities
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/capabilities/material-grade/" class="dropdown-item">Material Grade</a>
+            <a href="/capabilities/core-strength/" class="dropdown-item">Core Strength</a>
+          </div>
+        </div>
+
+        <!-- Facility Dropdown -->
+        <div class="nav-item-dropdown">
+          <a href="/facility/" class="nav-link">
+            Facility
+            <svg class="nav-dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="dropdown-menu">
+            <a href="/facility/infrastructure/" class="dropdown-item">Infrastructure</a>
+            <a href="/facility/manufacturing/" class="dropdown-item">Manufacturing Facility</a>
+          </div>
+        </div>
+
+        <a href="/quality/" class="nav-link">Quality</a>
+      </nav>
+
+      <!-- Desktop Header CTA: Contact Us Button -->
+      <div class="header-cta-wrap">
+        <a href="/contact/" class="btn btn-primary btn-header-cta">
+          Contact Us
+          <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu with Accordion Submenus -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <div class="mobile-nav-links">
+      <a href="/" class="mobile-nav-link active">Home</a>
+
+      <!-- About Group -->
+      <div class="mobile-nav-group">
+        <button type="button" class="mobile-nav-group-header">
+          About Us
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/about/company/" class="mobile-sub-link">About</a>
+          <a href="/about/management/" class="mobile-sub-link">Management</a>
+          <a href="/about/why-us/" class="mobile-sub-link">Why Us</a>
+        </div>
+      </div>
+
+      <a href="/products/" class="mobile-nav-link">Products</a>
+
+      <!-- Industries Group -->
+      <div class="mobile-nav-group">
+        <button type="button" class="mobile-nav-group-header">
+          Industries
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/industries/automobile/" class="mobile-sub-link">Automobile Sector</a>
+          <a href="/industries/hydraulic/" class="mobile-sub-link">Hydraulic Sector</a>
+          <a href="/industries/agricultural-equipment/" class="mobile-sub-link">Agricultural Equipment</a>
+          <a href="/industries/pumps-and-valves/" class="mobile-sub-link">Pump &amp; Valve Sector</a>
+          <a href="/industries/earthmoving/" class="mobile-sub-link">Earthmoving</a>
+          <a href="/industries/oil-and-gas/" class="mobile-sub-link">Oil &amp; Gas Sector</a>
+          <a href="/industries/power/" class="mobile-sub-link">Power Industry</a>
+          <a href="/industries/mining/" class="mobile-sub-link">Mining Sector</a>
+        </div>
+      </div>
+
+      <!-- Capabilities Group -->
+      <div class="mobile-nav-group">
+        <button type="button" class="mobile-nav-group-header">
+          Capabilities
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/capabilities/material-grade/" class="mobile-sub-link">Material Grade</a>
+          <a href="/capabilities/core-strength/" class="mobile-sub-link">Core Strength</a>
+        </div>
+      </div>
+
+      <!-- Facility Group -->
+      <div class="mobile-nav-group">
+        <button type="button" class="mobile-nav-group-header">
+          Facility
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </button>
+        <div class="mobile-nav-sublist">
+          <a href="/facility/infrastructure/" class="mobile-sub-link">Infrastructure</a>
+          <a href="/facility/manufacturing/" class="mobile-sub-link">Manufacturing Facility</a>
+        </div>
+      </div>
+
+      <a href="/quality/" class="mobile-nav-link">Quality</a>
+      <a href="/contact/" class="mobile-nav-link" style="color: var(--primary-orange); font-weight: 700;">Contact Us</a>
+    </div>
+
+    <div class="mobile-nav-footer">
+      <a href="/contact/" class="btn btn-primary" style="width: 100%; margin-bottom: 24px;">
+        Contact Us
+      </a>
+      <div class="mobile-nav-contact-item">
+        Phone: <a href="tel:+919377465254">+91 93774 65254</a>
+      </div>
+      <div class="mobile-nav-contact-item">
+        Email: <a href="mailto:info@marveltechno.in">info@marveltechno.in</a>
+      </div>
+      <div class="mobile-nav-contact-item" style="color: var(--text-muted); font-size: 11.5px; margin-top: 10px;">
+        Padavala, Tal. Kotda Sangani, Dist. Rajkot, Gujarat
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ==========================================
+         SECTION A: HERO 3-VIDEO SLIDESHOW (5-SEC ROTATION)
+         ========================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-video-slideshow">
+        <video class="hero-video-slide active" autoplay muted loop playsinline poster="/assets/hero-cnc.jpg">
+          <source src="/assets/IMG_6793.mp4" type="video/mp4">
+        </video>
+        <video class="hero-video-slide" muted loop playsinline poster="/assets/hero-cnc.jpg">
+          <source src="/assets/IMG_6794.mp4" type="video/mp4">
+        </video>
+        <video class="hero-video-slide" muted loop playsinline poster="/assets/hero-cnc.jpg">
+          <source src="/assets/IMG_6795.mp4" type="video/mp4">
+        </video>
+        <div class="hero-video-overlay"></div>
+      </div>
+
+      <!-- Hero Slide Indicators (5-Second Progress Bars) -->
+      <div class="hero-slide-indicators">
+        <button type="button" class="slide-indicator active" data-slide="0" aria-label="Slide 1">
+          <span class="slide-indicator-bar"></span>
+          <span>01</span>
+        </button>
+        <button type="button" class="slide-indicator" data-slide="1" aria-label="Slide 2">
+          <span class="slide-indicator-bar"></span>
+          <span>02</span>
+        </button>
+        <button type="button" class="slide-indicator" data-slide="2" aria-label="Slide 3">
+          <span class="slide-indicator-bar"></span>
+          <span>03</span>
+        </button>
+      </div>
+
+      <div class="container hero-content">
+        <!-- Metadata Pill (Clean — Zero location line on first page) -->
+        <div class="hero-meta-badge reveal-fade-up">
+          <span class="hero-meta-item">Precision Hot Forging</span>
+          <span class="hero-meta-dot"></span>
+          <span class="hero-meta-item">Advanced CNC Machining</span>
+          <span class="hero-meta-dot"></span>
+          <span class="hero-meta-item">ISO 9001:2015 Certified</span>
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="hero-title reveal-fade-up reveal-delay-1">
+          MARVEL TECHNO INDUSTRIES
+        </h1>
+
+        <!-- Highlight Tagline (Exact requirement: highlight in home page) -->
+        <div class="reveal-fade-up reveal-delay-2" style="margin-bottom: 24px;">
+          <div class="hero-tagline-highlight">
+            “DISCIPLINE DELIVERS QUALITY”
+          </div>
+        </div>
+
+        <!-- Supporting Text -->
+        <p class="hero-description reveal-fade-up reveal-delay-2">
+          A dedicated industrial manufacturing enterprise delivering mission-critical hot forged and CNC machined precision components with dimensional accuracy down to 0.01mm tolerance.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-ctas reveal-fade-up reveal-delay-3">
+          <a href="/capabilities/" class="btn btn-primary">
+            Explore Capabilities
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="/contact/" class="btn btn-outline-white">
+            Contact Us
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span>SCROLL</span>
+        <div class="scroll-stem"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION B: INDUSTRIES WE SERVE CAROUSEL
+         (Continuous right-to-left marquee, pause on hover)
+         ========================================== -->
+    <section class="section-industries-carousel">
+      <div class="container">
+        <div class="carousel-header-row reveal-fade-up">
+          <div>
+            <div class="section-badge">Engineering Sectors</div>
+            <h2 class="section-title" style="margin-bottom: 0;">Industries We Serve</h2>
+          </div>
+          <a href="/industries/" class="carousel-view-all">
+            All 8 Sectors
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Infinite Looping Marquee Track -->
+      <div class="industries-carousel-wrapper">
+        <div class="industries-carousel-track">
+          <!-- Card 1: Automobile -->
+          <a href="/industries/automobile/" class="industry-carousel-card">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-automobile.jpg" alt="Automobile Sector components">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Automobile Sector</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 2: Hydraulic -->
+          <a href="/industries/hydraulic/" class="industry-carousel-card">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-hydraulic.jpg" alt="Hydraulic Sector components">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Hydraulic Sector</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 3: Agricultural Equipment -->
+          <a href="/industries/agricultural-equipment/" class="industry-carousel-card">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-agricultural.jpg" alt="Agricultural Equipment components">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Agricultural Equipment</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 4: Pumps & Valves -->
+          <a href="/industries/pumps-and-valves/" class="industry-carousel-card">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-pumps-valves.jpg" alt="Pump and Valve Sector components">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Pump &amp; Valve Sector</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 5: Earthmoving -->
+          <a href="/industries/earthmoving/" class="industry-carousel-card">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-earthmoving.jpg" alt="Earthmoving components">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Earthmoving</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 6: Oil & Gas -->
+          <a href="/industries/oil-and-gas/" class="industry-carousel-card">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-oil-gas.jpg" alt="Oil and Gas Sector components">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Oil &amp; Gas Sector</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 7: Power -->
+          <a href="/industries/power/" class="industry-carousel-card">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-power.jpg" alt="Power Industry components">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Power Industry</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Card 8: Mining -->
+          <a href="/industries/mining/" class="industry-carousel-card">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-mining.jpg" alt="Mining Sector components">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Mining Sector</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- DUPLICATE TRACK FOR CONTINUOUS INFINITE SCROLL -->
+          <a href="/industries/automobile/" class="industry-carousel-card" aria-hidden="true" tabindex="-1">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-automobile.jpg" alt="">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Automobile Sector</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="/industries/hydraulic/" class="industry-carousel-card" aria-hidden="true" tabindex="-1">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-hydraulic.jpg" alt="">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Hydraulic Sector</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="/industries/agricultural-equipment/" class="industry-carousel-card" aria-hidden="true" tabindex="-1">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-agricultural.jpg" alt="">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Agricultural Equipment</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="/industries/pumps-and-valves/" class="industry-carousel-card" aria-hidden="true" tabindex="-1">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-pumps-valves.jpg" alt="">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Pump &amp; Valve Sector</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="/industries/earthmoving/" class="industry-carousel-card" aria-hidden="true" tabindex="-1">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-earthmoving.jpg" alt="">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Earthmoving</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="/industries/oil-and-gas/" class="industry-carousel-card" aria-hidden="true" tabindex="-1">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-oil-gas.jpg" alt="">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Oil &amp; Gas Sector</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="/industries/power/" class="industry-carousel-card" aria-hidden="true" tabindex="-1">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-power.jpg" alt="">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Power Industry</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+
+          <a href="/industries/mining/" class="industry-carousel-card" aria-hidden="true" tabindex="-1">
+            <div class="industry-carousel-img-wrap">
+              <img src="/assets/industry-mining.jpg" alt="">
+            </div>
+            <div class="industry-carousel-info">
+              <span class="industry-carousel-title">Mining Sector</span>
+              <span class="industry-carousel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION C: COMPANY IMPACT IN NUMBERS (4 EXACT METRICS)
+         ========================================== -->
+    <section class="section-impact-numbers">
+      <div class="container">
+        <div class="impact-stats-grid reveal-fade-up">
+          <!-- Metric 1: 22+ Years Experience -->
+          <div class="impact-stat-card">
+            <div class="impact-stat-number">
+              <span class="count-up-number" data-target="22" data-suffix="+">22+</span>
+            </div>
+            <div class="impact-stat-label">Years Experience</div>
+            <div class="impact-stat-sub">Proven metallurgical &amp; forging legacy</div>
+          </div>
+
+          <!-- Metric 2: 3,000 MT Capacity -->
+          <div class="impact-stat-card">
+            <div class="impact-stat-number">
+              <span class="count-up-number" data-target="3000">3,000</span><span class="stat-unit"> MT</span>
+            </div>
+            <div class="impact-stat-label">Production Capacity</div>
+            <div class="impact-stat-sub">Annual hot forging throughput</div>
+          </div>
+
+          <!-- Metric 3: 4 Manufacturing Plants -->
+          <div class="impact-stat-card">
+            <div class="impact-stat-number">
+              <span class="count-up-number" data-target="4">4</span>
+            </div>
+            <div class="impact-stat-label">Manufacturing Plant</div>
+            <div class="impact-stat-sub">Integrated fabrication &amp; CNC units</div>
+          </div>
+
+          <!-- Metric 4: 30% Spare Capacity -->
+          <div class="impact-stat-card">
+            <div class="impact-stat-number">
+              <span class="count-up-number" data-target="30" data-suffix="%">30%</span>
+            </div>
+            <div class="impact-stat-label">Spare Capacity</div>
+            <div class="impact-stat-sub">Rapid scaling for new volume contracts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION D: OVERVIEW PREVIEWS
+         ========================================== -->
+    <section class="section-about" style="padding: 100px 0; background-color: var(--bg-white);">
+      <div class="container">
+        <div class="about-layout">
+          <!-- Left: Plant photo with 23,000 Sq.Ft Badge -->
+          <div class="about-media-col reveal-fade-up">
+            <div class="about-image-wrapper">
+              <img src="/assets/plant-facility.jpg" alt="Marvel Techno Industries Plant Facility">
+              <div class="about-floating-badge">
+                <div class="about-badge-num">23,000<span> Sq.Ft</span></div>
+                <div class="about-badge-label">Modern Manufacturing Plant</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Corporate Narrative -->
+          <div class="about-content-col reveal-fade-up reveal-delay-1">
+            <div class="section-badge">Corporate Profile</div>
+            <h2 class="section-title">Built on a Foundation of Industrial Mastery.</h2>
+            <p class="about-lead-text">
+              <strong>Marvel Techno Industries</strong> represents a premier standard in precision machining and engineering excellence, operating from an expansive <strong>23,000 sq. ft. facility</strong>.
+            </p>
+            <p class="about-body-text">
+              Our directors carry a remarkable legacy of over two decades from <strong>Maruti Techno Industries</strong> — a name synonymous with forging integrity and craftsmanship since 2004. We bridge time-honoured metallurgical expertise with modern CNC machining technology, providing international clients with an integrated, dependable manufacturing partner.
+            </p>
+            <div style="margin-top: 32px; display: flex; gap: 16px; flex-wrap: wrap;">
+              <a href="/about/company/" class="btn btn-primary">
+                About Our Company
+                <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="/about/management/" class="btn btn-outline-dark">
+                View Management Flow
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Call to Action Banner -->
+    <section style="padding: 90px 0; background: linear-gradient(135deg, #0e1217 0%, #1a202c 100%); color: #ffffff; text-align: center; position: relative; overflow: hidden;">
+      <div class="container" style="position: relative; z-index: 2;">
+        <div class="section-badge" style="justify-content: center; color: var(--primary-orange);">Partner With Us</div>
+        <h2 style="font-family: var(--font-heading); font-size: clamp(28px, 3.5vw, 42px); font-weight: 800; margin-bottom: 16px; color: #ffffff;">
+          Need High-Precision Forged &amp; Machined Components?
+        </h2>
+        <p style="max-width: 620px; margin: 0 auto 32px; font-size: 16px; color: rgba(255, 255, 255, 0.8);">
+          Send us your 2D/3D component drawings or RFQs. Our directors and engineering team provide feasibility evaluations and competitive quotations within 24–48 hours.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+          <a href="/contact/" class="btn btn-primary">
+            Request A Quotation
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="tel:+919377465254" class="btn btn-outline-white">
+            Call +91 93774 65254
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       SECTION E: COMMON CORPORATE FOOTER
+       ========================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand Summary -->
+        <div class="footer-col footer-brand-col">
+          <a href="/" class="brand-link" style="margin-bottom: 16px;">
+            <img src="/assets/logo.png" alt="Marvel Techno Industries" class="brand-emblem" style="filter: none;">
+            <div class="brand-text-block">
+              <span class="brand-name" style="color: var(--text-white);">Marvel Techno Industries</span>
+              <span class="brand-tagline">Discipline Delivers Quality</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Single-source precision hot forging and high-accuracy CNC machining. Delivering critical mechanical components for automotive, hydraulic, agricultural, pump &amp; valve, and energy sectors worldwide.
+          </p>
+          <div class="footer-iso-badge">
+            <svg class="footer-iso-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <div>
+              <div class="footer-iso-title">TÜV SÜD ISO 9001:2015</div>
+              <div class="footer-iso-sub">Reg. No. 99 100 25318/01 | Valid to 2029</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="/about/company/" class="footer-link">About Company</a></li>
+            <li><a href="/about/management/" class="footer-link">Management Flowchart</a></li>
+            <li><a href="/about/why-us/" class="footer-link">Why Us</a></li>
+            <li><a href="/products/" class="footer-link">Products Catalog</a></li>
+            <li><a href="/quality/" class="footer-link">Quality &amp; Standards</a></li>
+            <li><a href="/contact/" class="footer-link">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Sectors & Capabilities -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Sectors &amp; Capabilities</h4>
+          <ul class="footer-links">
+            <li><a href="/industries/automobile/" class="footer-link">Automobile Sector</a></li>
+            <li><a href="/industries/hydraulic/" class="footer-link">Hydraulic Sector</a></li>
+            <li><a href="/industries/agricultural-equipment/" class="footer-link">Agricultural Equipment</a></li>
+            <li><a href="/industries/pumps-and-valves/" class="footer-link">Pump &amp; Valve Sector</a></li>
+            <li><a href="/industries/oil-and-gas/" class="footer-link">Oil &amp; Gas Sector</a></li>
+            <li><a href="/capabilities/material-grade/" class="footer-link">Material Grades Matrix</a></li>
+            <li><a href="/capabilities/core-strength/" class="footer-link">Core Strengths</a></li>
+            <li><a href="/facility/manufacturing/" class="footer-link">Machinery Fleet (12 Units)</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Verified Contact Data -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact Information</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <a href="tel:+919377465254">+91 93774 65254</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <a href="mailto:info@marveltechno.in">info@marveltechno.in</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              <a href="https://www.marveltechno.in" target="_blank" rel="noopener">www.marveltechno.in</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg class="footer-contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Plot no. 9, Revenue Survey No.121, At Padavala, Tal. Kotda Sangani, Dist. Rajkot, Gujarat, India.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-row">
+        <div class="footer-bottom-rights">
+          <span>&copy; 2026 Marvel Techno Industries. All rights reserved.</span>
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-white-dim);">
+          Discipline Delivers Quality
+        </div>
+        <button type="button" class="btn-back-to-top" id="backToTopBtn" aria-label="Back to top of page">
+          <span>Top</span>
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div class="contact-modal-overlay" id="contactModalOverlay" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="contact-modal-container">
+      <button type="button" class="modal-close-btn" id="closeContactModal" aria-label="Close Contact Modal">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-header">
+        <div class="section-badge">Direct Communication</div>
+        <h2 class="modal-title">Request A Quotation</h2>
+        <p class="modal-subtitle">
+          Submit your component drawings, specifications, or inquiry details. Our engineering directors will review and respond promptly.
+        </p>
+      </div>
+
+      <form id="quoteEnquiryForm">
+        <div class="modal-form-grid">
+          <div class="form-group">
+            <label for="contactName" class="form-label">Full Name *</label>
+            <input type="text" id="contactName" class="form-input" placeholder="e.g. John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="contactCompany" class="form-label">Company Name</label>
+            <input type="text" id="contactCompany" class="form-input" placeholder="e.g. Precision Systems Ltd.">
+          </div>
+          <div class="form-group">
+            <label for="contactEmail" class="form-label">Business Email *</label>
+            <input type="email" id="contactEmail" class="form-input" placeholder="name@company.com" required>
+          </div>
+          <div class="form-group">
+            <label for="contactPhone" class="form-label">Phone / WhatsApp *</label>
+            <input type="tel" id="contactPhone" class="form-input" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="form-group full-width">
+            <label for="contactRequirement" class="form-label">Requirement Category</label>
+            <select id="contactRequirement" class="form-select">
+              <option value="Hot Forging & Machining (Single-Source)">Hot Forging &amp; Machining (Single-Source)</option>
+              <option value="Hot Forging Only">Hot Forging Only (100g – 50kg)</option>
+              <option value="Precision CNC Machining Only">Precision CNC Machining Only (±0.01mm)</option>
+              <option value="Hydraulic Fittings / Plates">Hydraulic Fittings / Ported Plates</option>
+              <option value="Valve Components">Valve Components</option>
+              <option value="Automotive Parts">Automotive Components</option>
+              <option value="Forged Bolts / Fasteners">Forged Bolts &amp; Fasteners</option>
+              <option value="Other Custom Engineering Requirement">Other Custom Engineering Requirement</option>
+            </select>
+          </div>
+          <div class="form-group full-width">
+            <label for="contactMessage" class="form-label">Technical Details / Quantities</label>
+            <textarea id="contactMessage" class="form-textarea" placeholder="Provide details on part dimensions, material grades (Carbon/Alloy/SS), estimated volumes, or target delivery..."></textarea>
+          </div>
+        </div>
+
+        <div class="form-submit-row">
+          <div class="modal-direct-contacts">
+            <a href="tel:+919377465254" class="direct-contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              +91 93774 65254
+            </a>
+            <a href="mailto:info@marveltechno.in" class="direct-contact-link">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              info@marveltechno.in
+            </a>
+          </div>
+
+          <button type="submit" class="btn btn-primary" id="submitEnquiryBtn">
+            Send Inquiry
+            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+
+        <div class="form-feedback-alert" id="formSuccessAlert">
+          Thank you. Your inquiry has been received. Our engineering team at Marvel Techno Industries will review your requirements and get in touch within 24 business hours.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="/script.js"></script>
+</body>
+</html>
